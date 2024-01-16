@@ -3,8 +3,10 @@
 #define RELAY2 33    //GPIO33  para la salida de Relay 2
 #define WIFILED 26   //GPIO26 led indicador WIFI
 #define MQTTLED 27   //GPIO27 led indicador MQTT
-#define DIMMER 25    //GPIO25 led indicador DIMMER
-
+#define DIMMER 25    //GPIO25 led indicador DIMME
+//TODO calcular la capacidad del json
+const size_t capacitySettings = 1024*5;    // 5KB
+//TODO version de fitmware 
 #define TEXTIFY(A) #A
 #define ESCAPEQUOTE(A) TEXTIFY(A)
 String device_fw_version = ESCAPEQUOTE(BUILD_TAG);
